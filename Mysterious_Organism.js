@@ -37,11 +37,6 @@ const pAequorFactory = (number, dnaArray) => {
           return acc;
         }
       }, 0);
-      // for (let i=0; i<obj.dna.length; i++) {
-      //   if (this.dna[i] === obj.dna[i]) {
-      //     counter +=1;
-      //   }
-      
 
       commonPercentage = (counter/obj.dna.length * 100).toFixed(2)
       console.log(`Specimen ${this.specimenNum} & specimen ${obj.specimenNum} have ${commonPercentage}% DNA in common`)
@@ -138,10 +133,9 @@ let bestMatch = pAequorHighChance.reduce((acc, currVal, idx) => {
 
 }, [])
 
-
-
 // console.log(bestProb)
 // console.log(bestMatch)
+
 
 
 // console.log(pAequorHighChance.length)
